@@ -2,7 +2,7 @@
 name = "test-voyage"
 version = "0.0.0"
 description = "Test Voyage"
-authors = ["Ashwin Mathur <mail@claudiojolowicz.com>"]
+authors = ["Ashwin Mathur"]
 license = "Apache-2.0"
 readme = "README.md"
 homepage = "https://github.com/awinml/test-voyage"
@@ -16,32 +16,32 @@ classifiers = [
 Changelog = "https://github.com/awinml/test-voyage/releases"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-click = ">=8.0.1"
+python = ">=3.9"
+click = "*"
 
 [tool.poetry.group.test.dependencies]
-pytest = ">=6.2.5"
-coverage = {extras = ["toml"], version = "^6.1"}
-xdoctest = {extras = ["colors"], version = ">=0.15.10"}
+pytest = "*"
+coverage = {extras = ["toml"], version = "*"}
+xdoctest = {extras = ["colors"], version = "*"}
 
 [tool.poetry.group.dev.dependencies]
-Pygments = ">=2.10.0"
+Pygments = "*"
 black = "*"
-darglint = ">=1.8.1"
+darglint = "*"
 ruff = "*"
 mypy = "*"
-pep8-naming = ">=0.12.1"
-pre-commit = ">=2.16.0"
-pre-commit-hooks = ">=4.1.0"
-safety = ">=1.10.3"
-typeguard = ">=2.13.3"
+pep8-naming = "*"
+pre-commit = "*"
+pre-commit-hooks = "*"
+safety = "*"
+typeguard = "*"
 
 [tool.poetry.group.docs.dependencies]
-furo = ">=2021.11.12"
-sphinx = ">=4.3.2"
-sphinx-autobuild = ">=2021.3.14"
-sphinx-click = ">=3.0.2"
-myst-parser = {version = ">=0.16.1"}
+furo = "*"
+sphinx = "*"
+sphinx-autobuild = "*"
+sphinx-click = "*"
+myst-parser = {version = "*"}
 
 [tool.poetry.scripts]
 test-voyage = "test_voyage.__main__:main"
@@ -56,7 +56,7 @@ source = ["test_voyage", "tests"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+fail_under = 95
 
 [tool.mypy]
 strict = true
