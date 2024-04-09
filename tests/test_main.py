@@ -18,6 +18,6 @@ def test_main_succeeds(runner: CliRunner) -> None:
     assert result.exit_code == 0
 
 
-def test_simple_example():
+def test_simple_example() -> None:
     """Simple Test"""
     assert [1, 2, 3] == [1, 2, 3]
