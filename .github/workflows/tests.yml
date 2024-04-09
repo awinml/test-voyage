@@ -102,7 +102,7 @@ jobs:
           nox --python=${{ matrix.python }}
 
       - name: Upload coverage data
-        if: always() && matrix.session == 'tests'
+        if: always() && matrix.session == 'tests' && matrix.os == 'ubuntu-latest' && matrix.python == '3.10'
         uses: "actions/upload-artifact@v4"
         with:
           name: coverage-data
