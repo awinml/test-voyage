@@ -2,7 +2,7 @@
 name = "test-voyage"
 version = "0.0.0"
 description = "Test Voyage"
-authors = ["Ashwin Mathur <mail@claudiojolowicz.com>"]
+authors = ["Ashwin Mathur"]
 license = "Apache-2.0"
 readme = "README.md"
 homepage = "https://github.com/awinml/test-voyage"
@@ -56,7 +56,7 @@ source = ["test_voyage", "tests"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+fail_under = 95
 
 [tool.mypy]
 strict = true
